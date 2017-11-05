@@ -1,0 +1,98 @@
+body { 
+    background: #FF7B73; 
+    color: #FF7B73; 
+    font-family: "Oswald", 
+    sans-serif; 
+    font-size: 18px;
+} 
+
+::-webkit-input-placeholder {
+    color: #FCD5D3;
+}
+
+/* Dribbble related code */
+
+.cta {
+	background: #fff;
+	font-weight: bold;
+	line-height: 50px;
+	height: 50px;
+	width: 170px;
+	text-align: center;
+	transition: width .2s ease-in-out;
+    cursor: pointer;
+}
+
+.cta .hide { display: none; }
+
+.cta form { display: flex; } /* I know, I know */
+
+.cta span {
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn .3s ease-in-out;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+.cta .input {
+    display: none;
+    opacity: 0;
+    flex: 3;
+    text-align: left;
+}
+
+.cta .input input {
+    border: 0;
+    width: 240px;
+    height: 45px;
+    margin: 0 0 0 25px;
+    outline: none;
+    color: #FF7B73;
+}
+
+.cta .button {
+    display: none;
+    opacity: 0;
+    flex: 1;
+}
+
+.cta .button button {
+    outline: none;
+    float: right;
+    padding: 0 15px;
+    height: 40px;
+    background: #FF7B73;
+    color: #fff;
+    border: 0;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.cta .button button:disabled{ color: #FC9F9D; opacity: .8;  }
+
+.cta .button button.sent { cursor: default; }
+
+.cta .button button.active {
+    width: 350px;
+    text-align: left;
+    transition: width .2s ease-in-out;
+    cursor: default;
+}
+
+.cta .button button.active span { display: none; }
+
+.cta .button button.active .input, .button {
+    display: block;
+    animation: fadeIn .3s ease-in-out;
+    animation-delay: .1s;
+    animation-fill-mode: forwards;
+}
+
+/* Fade + slight zoom */
+@keyframes fadeIn {
+	0% { opacity: 0; transform: scale(.7); }
+	100% { opacity: 1; transform: scale(1); }
+}

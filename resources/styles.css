@@ -1,0 +1,162 @@
+body {
+  background: #004B73;
+  margin: 0;
+  font-family: 'Oswald';
+}
+
+/* Front Page Content */
+.content {
+    position: absolute;
+    top: 590px;
+    background: #000F17;
+    width: 100%;
+    color: #ededed;
+    text-align: center;
+    overflow: hidden;
+}
+  .content h1 {
+    font-size: 3.25em;
+    text-transform: uppercase;
+  }
+
+.content p {
+    text-transform: lowercase;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em
+}
+
+.content .intro {
+    padding: 20px 0px;
+}
+
+/* Intro */
+.content table .info-box {
+    float: left;
+    height: 275px;
+    width: 275px;
+    text-align: center;
+    background: #ededed;
+    color: #000F17;
+    margin: 20px;
+}
+
+.content table .photo-box {
+    float: left;
+    height: 275px;
+    width: 275px;
+    text-align: center;
+    background-image: url('images/info-witch.jpg');
+    background-size: 275px;
+    color: #ededed;
+    margin: 20px;
+}
+
+.content table h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding: 0px 20px;
+}
+
+.content table h2 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding-bottom: 50px;
+}
+
+td div img {
+    height: 100px;
+    margin: 30px 20px 20px 20px;
+}
+
+/* Carousel */
+#slider {
+    color: #000f17;
+    background-color: #ededed;
+}
+
+#front-page-carousel {
+    width: 100%;
+}
+
+#front-page-carousel div.carousel-caption {
+    top: 25%;
+}
+
+ol.carousel-indicators li {
+    border: 1px solid #000f17;
+}
+
+
+ol.carousel-indicators li.active {
+    background-color: #000f17;
+}
+
+.carousel-control,
+.carousel-control:hover,
+.carousel-control:active,
+.carousel-control:visited {
+    color: #000f17;
+    text-align: center;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none
+}
+
+#front-page-carousel img {
+    opacity: .7;
+}
+
+#front-page-carousel h1 {
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #000f17;
+    text-shadow: none;
+}
+
+#front-page-carousel p {
+    text-transform: lowercase;
+    font-size: 3em;
+    color: #000f17;
+    text-shadow: none;
+}
+
+/* Newsletter & Best Sellers */
+.light-bg {
+    background-color: #ededed;
+    color: #000f17;
+    width: 100%
+}
+
+/* Footer */
+footer, .footer {
+    background: #000F17;
+    width: 100%;
+    color: #ededed;
+    text-align: center;
+}
+
+.footer img {
+    width: 250px;
+    padding: 20px;
+}
+
+/* Product Tiles */
+
+.product-tile {
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    
+    margin: 20px;
+    display: flex;
+}
+.product-tile img { 
+    height: 100%;
+    object-fit: cover;
+}
