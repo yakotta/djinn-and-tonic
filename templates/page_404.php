@@ -1,2 +1,2 @@
-<p>404 YOU FUCKED UP</p>
+<p>404 :(</p>
 <?=$url?>
