@@ -14,7 +14,7 @@ function connect()
     $hostname = "localhost";
     $username = "root";
     $password = "root";
-    $database = "online_shop";
+    $database = "djinn_and_tonic";
     $dbport = 3306;
     
     // Create connection
@@ -81,4 +81,11 @@ function check_parameters ($source, $parameters=[]) {
 function redirect($url) {
     header("Location: $url");
     die("Waiting to redirect to '$url'");
+}
+
+// Rewrites a requested url based on website location 
+function rewrite_url($url) {
+    $base = str_replace($_SERVER["DOCUMENT_ROOT"], "", __DIR__);
+    $base = str_replace("/resources", "", $base);
+    return $base.$url;
 }

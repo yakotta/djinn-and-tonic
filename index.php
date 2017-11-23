@@ -9,7 +9,11 @@ $url = $_GET["url"];
 switch($url){
 // Home Page
     case "":
-        $template = render_template("templates/page_home.php");
+        include(__DIR__."/api/frontslider.php");
+        $sliders = getFrontSliders();
+        $template = render_template("templates/page_home.php", [
+            "sliders" => $sliders
+        ]);
     break;
 
 // Migrations
