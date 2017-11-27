@@ -12,7 +12,7 @@
         <div class="carousel-inner">
             <?php foreach($sliders as $key => $slide): ?>
                 <div class="item <?=$key==0 ? "active" : ""?>">
-                    <img src="<?=$slide["image"]?>" />
+                    <img src="<?=rewrite_url($slide["image"])?>" />
                     <div class="carousel-caption">
                         <h1><?=$slide["title"]?></h1>
                         <p><?=$slide["blurb"]?></p>

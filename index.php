@@ -10,9 +10,12 @@ switch($url){
 // Home Page
     case "":
         include(__DIR__."/api/frontslider.php");
+        include(__DIR__."/api/products.php");
         $sliders = getFrontSliders();
+        $bestseller_list = getBestSellers();
         $template = render_template("templates/page_home.php", [
-            "sliders" => $sliders
+            "sliders" => $sliders,
+            "bestseller_list" => $bestseller_list
         ]);
     break;
 

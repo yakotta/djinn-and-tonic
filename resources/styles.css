@@ -146,17 +146,24 @@ footer, .footer {
     padding: 20px;
 }
 
+/* Best-Sellers */
+
+.best-sellers .list{
+    white-space: nowrap;
+}
+
 /* Product Tiles */
 
 .product-tile {
-    width: 200px; 
-    height: 200px; 
-    overflow: hidden; 
-    
-    margin: 20px;
-    display: flex;
+    float: none;
+    display: inline-block;
 }
-.product-tile img { 
-    height: 100%;
-    object-fit: cover;
+
+.product-tile-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-tile-image img { 
+    height: 200px;
 }

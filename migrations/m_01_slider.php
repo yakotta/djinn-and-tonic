@@ -1,7 +1,7 @@
 <?php
 $db = connect();
 
-$services=<<<QUERY
+$query=<<<QUERY
     create table if not exists frontslider (
         id int not null auto_increment primary key,
         title varchar(255),
@@ -12,6 +12,6 @@ $services=<<<QUERY
 QUERY;
 
 // this will pass the create table query to the function
-$db->query($services);
+$db->query($query);
 
 return true;
